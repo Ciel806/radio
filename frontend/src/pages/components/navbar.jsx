@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
+
 export default function Navbar({ isScrolled }) {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -60,16 +61,25 @@ export default function Navbar({ isScrolled }) {
             </button>
             <Link
               to="/about"
+            <Link 
+              to="/" 
+              className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+            >
+              HOME
+            </Link>
+            <Link 
+              to="/programs" 
+              className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+            >
+              PROGRAMS
+            </Link>
+            <Link 
+              to="/about" 
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
             >
               ABOUT
             </Link>
-            <button
-              onClick={() => handleScroll("schedule")}
-              className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
-            >
-              SCHEDULE
-            </button>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,21 +103,24 @@ export default function Navbar({ isScrolled }) {
               onClick={() => handleScroll("shows")}
               className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full text-left"
             >
-              SHOWS
-            </button>
-            <Link
-              to="/about"
+              HOME
+            </Link>
+            <Link 
+              to="/programs" 
+              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
               onClick={() => setIsOpen(false)}
               className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full"
             >
+              PROGRAMS
+            </Link>
+            <Link 
+              to="/about" 
+              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
+              onClick={() => setIsOpen(false)}
+            >
               ABOUT
             </Link>
-            <button
-              onClick={() => handleScroll("schedule")}
-              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full text-left"
-            >
-              SCHEDULE
-            </button>
+            
           </div>
         )}
       </div>
