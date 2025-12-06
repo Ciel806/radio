@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 export default function HeroSection() {
   const vinylRef = useRef(null)
 
-  // Vinyl rotation animation
+  
   useEffect(() => {
     const vinyl = vinylRef.current
     if (!vinyl) return
@@ -18,7 +18,7 @@ export default function HeroSection() {
     animate()
   }, [])
 
-  // Fade-in on scroll
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {

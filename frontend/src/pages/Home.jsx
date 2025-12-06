@@ -18,12 +18,21 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="overflow-hidden bg-gradient-to-b from-zinc-950 via-amber-950 to-zinc-950">
-      <Navbar isScrolled={isScrolled} />
+  <main className="overflow-hidden bg-gradient-to-b from-zinc-950 via-amber-950 to-zinc-950">
+    <Navbar isScrolled={isScrolled} />
+
+    <div id="schedule">
       <HeroSection />
-      <AudioPlayer />
+    </div>
+
+    <AudioPlayer />
+
+    <div id="shows">
       <FeaturedShows />
-      <Footer />
-    </main>
-  )
+    </div>
+
+    <Footer />
+  </main>
+)
+
 }

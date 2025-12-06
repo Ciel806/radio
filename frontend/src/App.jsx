@@ -3,6 +3,7 @@ import Home from './pages/Home.jsx';
 import Programs from './pages/programs.jsx';
 import About from './pages/about.jsx';
 import { Navigate } from 'react-router-dom';
+import About from "./pages/about.jsx";
 
 function App() {
   return (
