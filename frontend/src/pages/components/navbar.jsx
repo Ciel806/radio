@@ -60,22 +60,23 @@ export default function Navbar({ isScrolled }) {
               SHOWS
             </button>
             <Link
-              to="/about"
-            <Link 
-              to="/" 
+              to="/"
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+              onClick={() => setIsOpen(false)}
             >
               HOME
             </Link>
             <Link 
               to="/programs" 
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+              onClick={() => setIsOpen(false)}
             >
               PROGRAMS
             </Link>
             <Link 
               to="/about" 
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+              onClick={() => setIsOpen(false)}
             >
               ABOUT
             </Link>
@@ -95,7 +96,6 @@ export default function Navbar({ isScrolled }) {
             )}
           </button>
         </div>
-
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pt-4 pb-4 space-y-2 animate-in fade-in slide-in-from-top-2 duration-200 backdrop-blur-sm">
@@ -103,19 +103,25 @@ export default function Navbar({ isScrolled }) {
               onClick={() => handleScroll("shows")}
               className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full text-left"
             >
+              SHOWS
+            </button>
+            <Link
+              to="/"
+              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full"
+              onClick={() => setIsOpen(false)}
+            >
               HOME
             </Link>
             <Link 
               to="/programs" 
-              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
-              onClick={() => setIsOpen(false)}
               className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full"
+              onClick={() => setIsOpen(false)}
             >
               PROGRAMS
             </Link>
             <Link 
               to="/about" 
-              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
+              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium w-full"
               onClick={() => setIsOpen(false)}
             >
               ABOUT
@@ -123,6 +129,7 @@ export default function Navbar({ isScrolled }) {
             
           </div>
         )}
+        
       </div>
     </nav>
   );
