@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import Navbar from "./components/navbar"
 import Footer from "./components/footer"
 
+
 export default function About() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [stationData, setStationData] = useState(null)
