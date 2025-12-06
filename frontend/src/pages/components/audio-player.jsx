@@ -73,21 +73,22 @@ export default function AudioPlayer() {
         <div className="bg-black rounded-3xl p-8 border-2 border-[#ce443d] shadow-lg">
           
           {/* Audio element */}
-          <audio
-            ref={audioRef}
-            onTimeUpdate={handleTimeUpdate}
-            onLoadedMetadata={handleLoadedMetadata}
-          >
-            <source
-              src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-              type="audio/mpeg"
-            />
-          </audio>
+        <audio
+        ref={audioRef}
+        onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={handleLoadedMetadata}
+        loop
+      >
+        <source
+          src="/audio/SheWillBeLoved.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
 
           {/* Now Playing Info */}
           <div className="mb-6">
             <h3 className="text-[#ce443d] font-bold text-lg mb-2 tracking-wider">NOW PLAYING</h3>
-            <p className="text-[#deddd8] text-xl font-bold">Smooth Jazz Sessions</p>
+            <p className="text-[#deddd8] text-xl font-bold">She Will Be Loved - Maroon5</p>
             <p className="text-sm text-[#deddd8]/70">Vinyl Radio Live • 88.4 FM</p>
           </div>
 
