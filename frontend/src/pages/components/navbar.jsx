@@ -65,6 +65,7 @@ export default function Navbar({ isScrolled }) {
             <button
               onClick={() => handleScroll("schedule")}
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+              onClick={() => setIsOpen(false)}
             >
               SCHEDULE
             </button>
@@ -72,6 +73,7 @@ export default function Navbar({ isScrolled }) {
             <Link
               to="/programs"
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+              onClick={() => setIsOpen(false)}
             >
               PROGRAMS
             </Link>
@@ -79,6 +81,7 @@ export default function Navbar({ isScrolled }) {
             <Link
               to="/about"
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+              onClick={() => setIsOpen(false)}
             >
               ABOUT
             </Link>
@@ -136,6 +139,7 @@ export default function Navbar({ isScrolled }) {
             </Link>
           </div>
         )}
+        
       </div>
     </nav>
   );
