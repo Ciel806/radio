@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
+
 export default function Navbar({ isScrolled }) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -37,22 +38,22 @@ export default function Navbar({ isScrolled }) {
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
             <Link 
-              to="/shows" 
+              to="/" 
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
             >
-              SHOWS
+              HOME
+            </Link>
+            <Link 
+              to="/programs" 
+              className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
+            >
+              PROGRAMS
             </Link>
             <Link 
               to="/about" 
               className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
             >
               ABOUT
-            </Link>
-            <Link 
-              to="/schedule" 
-              className="text-[#deddd8]/70 hover:text-[#ce443d] transition-colors font-medium tracking-wide text-sm"
-            >
-              SCHEDULE
             </Link>
             
           </div>
@@ -82,7 +83,14 @@ export default function Navbar({ isScrolled }) {
               className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
               onClick={() => setIsOpen(false)}
             >
-              SHOWS
+              HOME
+            </Link>
+            <Link 
+              to="/programs" 
+              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              PROGRAMS
             </Link>
             <Link 
               to="/about" 
@@ -90,13 +98,6 @@ export default function Navbar({ isScrolled }) {
               onClick={() => setIsOpen(false)}
             >
               ABOUT
-            </Link>
-            <Link 
-              to="/schedule" 
-              className="block text-[#deddd8]/70 hover:text-[#ce443d] py-3 px-4 hover:bg-black/50 rounded-lg transition-colors font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              SCHEDULE
             </Link>
             
           </div>
