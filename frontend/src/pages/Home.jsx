@@ -1,10 +1,10 @@
 
 import { useState, useEffect } from "react"
-import Navbar from "./pages/components/navbar.jsx"
-import HeroSection from "./pages/components/hero-section.jsx"
-import AudioPlayer from "./pages/components/audio-player.jsx"
-import FeaturedShows from "./pages/components/featured-shows.jsx"
-import Footer from "./pages/components/footer.jsx"
+import Navbar from "./components/navbar.jsx"
+import HeroSection from "./components/hero-section.jsx"
+import AudioPlayer from "./components/audio-player.jsx"
+import FeaturedShows from "./components/featured-shows.jsx"
+import Footer from "./components/footer.jsx"
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -18,12 +18,21 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="overflow-hidden bg-gradient-to-b from-zinc-950 via-amber-950 to-zinc-950">
-      <Navbar isScrolled={isScrolled} />
+  <main className="overflow-hidden bg-gradient-to-b from-zinc-950 via-amber-950 to-zinc-950">
+    <Navbar isScrolled={isScrolled} />
+
+    <div id="schedule">
       <HeroSection />
-      <AudioPlayer />
+    </div>
+
+    <AudioPlayer />
+
+    <div id="shows">
       <FeaturedShows />
-      <Footer />
-    </main>
-  )
+    </div>
+
+    <Footer />
+  </main>
+)
+
 }
