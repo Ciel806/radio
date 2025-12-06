@@ -48,7 +48,7 @@ export default function FeaturedShows() {
 
   return (
     <section id="shows-section" className="py-16 px-4 bg-black mt-20 mb-20 border-t-2 border-b-2 border-[#ce443d]/50">
-      <div className="max-w-6xl pr-10 pl-10">
+      <div className="max-w-6xl pr-10 pl-10 items-center mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-[#deddd8] mb-12 text-center border-b-2 border-[#ce443d] pb-4">
           FEATURED SHOWS
         </h2>
