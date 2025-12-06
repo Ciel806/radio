@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Late Night Sessions",
+    "host": "DJ Marcus",
+    "time": "8:00 PM - 12:00 AM",
+    "day": "Monday - Friday",
+    "description": "Smooth jazz and soul classics for your late-night relaxation. Perfect for winding down after a long day with curated selections from legendary artists like Miles Davis, Norah Jones, and Billie Holiday.",
+    "listeners": "1.2K",
+    "isLive": true,
+    "image": "lateNight.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Skillionaires",
+    "host": "Mark Chen & Sarah Williams",
+    "time": "10:00 AM - 2:00 PM",
+    "day": "Monday & Wednesday",
+    "description": "Masterclass series on building wealth through skills. Industry experts share practical knowledge on entrepreneurship, investing, career development, and financial literacy to help listeners build sustainable income streams.",
+    "listeners": "4.3K",
+    "isLive": true,
+    "image": "skill.jpg"
+    },
+  {
+    "id": 3,
+    "title": "Mystery Rides",
+    "host": "DJ Echo",
+    "time": "12:00 AM - 4:00 AM",
+    "day": "Friday & Saturday",
+    "description": "Embark on a musical journey through unknown territories. Each episode features undiscovered artists, experimental sounds, and genre-blending tracks that will take you on an unexpected auditory adventure.",
+    "listeners": "3.8K",
+    "isLive": true,
+    "image": "mystery.jpg"
+},
+  {
+    "id": 4,
+    "title": "Daily Dose of Tea",
+    "host": "Angela Kim & Tom Lee",
+    "time": "6:00 PM - 10:00 PM",
+    "day": "Wednesday & Friday",
+    "description": "The ultimate pop culture and entertainment talk show. Angela and Tom spill the latest tea on celebrity news, movie reviews, music releases, and trending topics with humor, wit, and honest opinions.",
+    "listeners": "2.1K",
+    "isLive": false,
+    "image": "tea.jpg"
+  }
+]
